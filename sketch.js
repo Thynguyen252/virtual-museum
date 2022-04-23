@@ -1,5 +1,6 @@
 let osc, playing, freq, amp;
 let button, img;
+let virtualMuseum = 'MuseumEntrance';
 
 function preload(){
   img = loadImage('images/gallery.png');
@@ -15,24 +16,24 @@ function setup() {
   let cnv = createCanvas(400, 400);
   cnv.mousePressed(playOscillator);
   osc = new p5.Oscillator('sine');
-  /*button = createButton('Tap to play');
+  button = createButton('Tap to play');
   button.position(0, 140);
   button.mousePressed();
-  button.style('background-color', '#ffff');*/
+  button.style('background-color', '#ffff');
   image(img, 20, 0, 400, 400);
 }
 
 function draw() {
 
-  switch (gameState) {
-    case 'click to start':
+  switch (virtualMuseum) {
+    case 'MuseumEntrance':
       landingpage();
       break;
     case 'explore':
       virtualmuseum();
       break;
-    case 'farewell':
-      farewell();
+    case 'return':
+      endingpage();
       break;
   }
   freq = constrain(map(mouseX, 0, width, 100, 400), 100, 400);
@@ -47,7 +48,17 @@ function draw() {
   }
 }
 
+function landingpage(){
 
+}
+
+function virtualmuseum(){
+
+}
+
+function endingpage(){
+
+}
 function playOscillator() {
   osc.start();
   playing = true;
