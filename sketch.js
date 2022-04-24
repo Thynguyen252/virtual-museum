@@ -3,7 +3,7 @@ let button, img;
 let virtualMuseum = 'MuseumEntrance';
 
 function preload(){
-  img = loadImage('images/gallery.png');
+  img = loadImage('assets/gallery.png');
 
   let link = createA('exit.html','EXIT HERE');
   link.position(0, 500);
