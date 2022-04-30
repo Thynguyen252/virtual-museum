@@ -7,11 +7,37 @@ canvas {
 }
  a {
    color: black;
-   text-align: center;
+   /* align-self: center; */
    font-family: helvetica;
    font-weight: bold;
-   font-size: 20pt;
+   font-size: 15pt;
    text-decoration: none;
+ }
+
+ .title {
+   position: absolute;
+   top: 60px;
+   margin-left: 150px;
+ }
+
+ .description{
+   position:absolute;
+   margin-top: 100px;
+   margin-left: 20px;
+ }
+
+ .farewell{
+   font-family: helvetica;
+   font-size: 14px;
+   margin-top: 100px;
+   margin-left: 100px;
+
+ }
+
+ .uturn{
+   position: absolute;
+   top: 50px;
+   margin-left: 180px;
  }
 img {
   align-self: center;
